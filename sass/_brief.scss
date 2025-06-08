@@ -1,0 +1,108 @@
+.section__brief{
+
+    padding: 4rem 12rem;
+    border: 1px solid $color-grey-light-1;
+    margin: 3rem 12rem 1rem;
+    text-align: center;
+
+    
+    &__logo--image{
+        width: 5rem;
+        height: 2rem;
+    }
+    &__text{
+        font-size: 2.5rem;
+        color: $color-grey-light-1;
+        line-height: 1.5;
+        margin-top: 2rem;
+    }
+    &__heading{
+        
+
+        &--link{
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: $color-secondary;
+            margin-bottom: 2rem;
+        }
+    }
+    &__paragraph{
+        font-size: 1.4rem;
+        color: $color-grey-light-2;
+        line-height: 1.25;
+    }
+    &__subheading{
+        font-size: 1.4rem;
+        color: $color-secondary;
+    }
+    &__mail{
+        font-size: 2rem;
+        color: $color-secondary;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+
+        &--link{
+            color: $color-grey-dark-2;
+        }
+        &--text{
+            font-size: 1.3rem;
+            line-height: 1.1;
+            color: $color-grey-light-2;
+        }
+
+        &:hover{
+            color: $color-primary-dark;
+        }
+        &--button{
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.4rem;
+            padding: 1rem 3rem;
+            color: $color-grey-light-1;
+            border-radius: 0.5rem;
+            border: none;
+            background-color: $color-secondary;
+
+            &:hover{
+                background-color: $color-primary-dark;
+                outline: none;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    &__email{
+        font-size: 1.5rem;
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+        padding: .8rem 5rem .8rem 1rem;
+        border-radius: 0.5rem;
+        background-color: $color-grey-light-1;
+        width: 30%;
+        margin: 2rem 0;
+        margin-right: .2rem;
+        
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid green;
+            font-size: 1.5rem; // Reduced font size while typing
+        }
+        &:focus:invalid{
+            border-bottom: 3px solid red;
+        }
+
+        &::placeholder{
+            color: $color-grey-dark-2;
+            font-family: inherit;
+            font-size: 1.4rem;
+        }
+        &:active{
+            font-size: 1rem;
+            font-family: inherit;
+        }
+    }
+}

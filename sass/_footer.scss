@@ -1,0 +1,109 @@
+.section__footer{
+    background-color: $color-secondary;
+    padding: 6rem 4rem;
+
+    &__top{
+        display: flex;
+        border-bottom: 1px solid $color-grey-light-2;
+
+        &--left{
+            flex: 0 0 50%;
+        }
+        &--logo{
+            width: 20rem;
+            height: 8rem;
+            margin-bottom: 3rem;
+        }
+        &--text{
+            font-size: 1.6rem;
+            color: $color-grey-light-1;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            padding-right: 20rem;
+        }
+        &--logos{
+            margin-bottom: 2rem;
+        }
+        &--middle{
+            flex: 1;
+            text-align: left;
+        }
+        &--header{
+            font-size: 2.4rem;
+            color: $color-grey-light-1;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        &__right__container{
+            flex: 1;
+            text-align: right;
+        }
+        &__right1{
+            margin-bottom: 4rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid $color-grey-light-2;
+            
+        }
+        &__right2{
+            margin-bottom: 2rem;
+        }
+        &__header1{
+            font-size: 2.2rem;
+            color: $color-grey-light-1;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        &__header2{
+            font-size: 1.5rem;
+            color: $color-grey-light-1;
+            font-weight: 600;
+        }
+
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        font-size: 1.4rem;
+        color: $color-grey-light-2;
+
+        &--left{
+            flex: 0 0 50%;
+            text-align: left;
+        }
+        &--right{
+            flex: 1;
+            text-align: right;
+        }
+        &--link{
+            text-decoration: none;
+            color: $color-primary;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                color: $color-grey-dark-1;
+            }
+        }
+    }
+}
+.footer__navigation{
+
+    &__item{
+      margin-bottom: 1rem;
+      list-style: none;
+      
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-grey-light-1;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        display: block;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $color-primary-dark;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.section__membership{
+    padding: 8rem 4rem;
+
+    &__topbar{
+        padding: 7rem 3rem;
+        background-color: $color-primary;
+
+        &__heading{
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: $color-grey-light-1;
+            font-family: "Josefin Sans", sans-serif;
+            margin-bottom: 2rem;
+        }
+        &__text{
+            font-size: 2.5rem;
+            color: $color-grey-light-1;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+    }
+    &__content{
+        display: flex;
+        margin-top: 3rem;
+       
+
+        &__left{
+            background-color: $color-grey-light-1;
+            flex: 0 0 50%;
+            margin-right: 4rem;
+            padding: 3rem;
+            
+            
+        }
+        &__right{
+            flex: 1;
+            padding: 3rem;
+            background-color: $color-grey-light-1;
+            
+        }
+        &--btn1{
+            display: inline-block;
+            text-decoration: none;
+            color: $color-secondary;
+            background-color: $color-grey-light-2;
+            padding: 1.5rem 3rem;
+            border-radius: 0.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: "Josefin Sans", sans-serif;
+            border: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: $color-primary-dark;
+                color: $color-grey-light-1;
+            }
+        }
+        &--btn2{
+            display: inline-block;
+            text-decoration: none;
+            color: $color-grey-light-1;
+            background-color: $color-secondary;
+            padding: 1.5rem 3rem;
+            border-radius: 0.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: "Josefin Sans", sans-serif;
+            border: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: $color-grey-light-1;
+                color: $color-secondary;
+            }
+        }
+        &__btn{
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid $color-grey-light-2;
+        }
+        &__text{
+            font-size: 2rem;
+            color: $color-secondary;
+            line-height: 1.1;
+            margin-top: 2rem;
+        }
+    }
+}
