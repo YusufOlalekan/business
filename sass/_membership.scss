@@ -1,6 +1,9 @@
 .section__membership{
     padding: 8rem 4rem;
 
+    @media screen and (max-width: $bp-small) {
+        padding: 8rem 1rem;    }
+
     &__topbar{
         padding: 7rem 3rem;
         background-color: $color-primary;
@@ -23,6 +26,10 @@
     &__content{
         display: flex;
         margin-top: 3rem;
+
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
        
 
         &__left{
@@ -30,6 +37,11 @@
             flex: 0 0 50%;
             margin-right: 4rem;
             padding: 3rem;
+
+        @media screen and (max-width: $bp-small) {
+             margin-right: 0;
+             margin-bottom: 4rem;
+        }
             
             
         }
@@ -53,6 +65,12 @@
             text-transform: uppercase;
             transition: all 0.3s ease-in-out;
 
+            @media screen and (max-width: $bp-largest) {
+            
+            font-size: 1.5rem;
+            
+        }
+
             &:hover{
                 background-color: $color-primary-dark;
                 color: $color-grey-light-1;
@@ -72,6 +90,11 @@
             text-transform: uppercase;
             transition: all 0.3s ease-in-out;
 
+            @media screen and (max-width: $bp-largest) {
+            font-size: 1.5rem;
+            
+        }
+
             &:hover{
                 background-color: $color-grey-light-1;
                 color: $color-secondary;
@@ -87,6 +110,12 @@
             color: $color-secondary;
             line-height: 1.1;
             margin-top: 2rem;
+
+            @media screen and (max-width: $bp-largest) {
+            
+            font-size: 1.7rem;
+            
+        }
         }
     }
 }

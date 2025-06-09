@@ -6,8 +6,16 @@
         display: flex;
         border-bottom: 1px solid $color-grey-light-2;
 
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
+
         &--left{
             flex: 0 0 50%;
+
+            @media screen and (max-width: $bp-smallest){
+                text-align: center;
+            }
         }
         &--logo{
             width: 20rem;
@@ -20,6 +28,13 @@
             line-height: 1.5;
             margin-bottom: 2rem;
             padding-right: 20rem;
+
+            @media screen and (max-width: $bp-medium) {
+                font-size: 1.4rem;
+            }
+            @media screen and (max-width: $bp-largest){
+                padding-right: 0rem;    
+            }
         }
         &--logos{
             margin-bottom: 2rem;
@@ -27,16 +42,28 @@
         &--middle{
             flex: 1;
             text-align: left;
+
+            @media screen and (max-width: $bp-smallest){
+                text-align: center;
+            }
         }
         &--header{
             font-size: 2.4rem;
             color: $color-grey-light-1;
             font-weight: 600;
             margin-bottom: 3rem;
+
+            @media screen and (max-width: $bp-medium) {
+                font-size: 1.8rem;
+            }
         }
         &__right__container{
             flex: 1;
             text-align: right;
+
+            @media screen and (max-width: $bp-largest){
+                text-align: center;
+            }
         }
         &__right1{
             margin-bottom: 4rem;
@@ -52,11 +79,19 @@
             color: $color-grey-light-1;
             font-weight: 600;
             margin-bottom: 1rem;
+
+            @media screen and (max-width: $bp-medium) {
+                font-size: 1.9rem;
+            }
         }
         &__header2{
             font-size: 1.5rem;
             color: $color-grey-light-1;
             font-weight: 600;
+
+            @media screen and (max-width: $bp-medium) {
+                font-size: 1.3rem;
+            }
         }
 
     }
@@ -68,13 +103,25 @@
         font-size: 1.4rem;
         color: $color-grey-light-2;
 
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
+
         &--left{
             flex: 0 0 50%;
             text-align: left;
+
+            @media screen and (max-width: $bp-smallest){
+                text-align: center;
+            }
         }
         &--right{
             flex: 1;
             text-align: right;
+
+            @media screen and (max-width: $bp-smallest){
+                text-align: center;
+            }
         }
         &--link{
             text-decoration: none;

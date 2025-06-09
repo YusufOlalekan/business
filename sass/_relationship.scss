@@ -13,6 +13,8 @@
     }
     &__tabs{
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-around;
         padding: 1rem 4rem;
     }
@@ -21,8 +23,26 @@
         padding: 5rem 4rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 
+        @media screen and (max-width: $bp-largest) {
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width: $bp-large) {
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width: $bp-medium) {
+            flex: 0 0 30%;
+            margin-bottom: 2rem;
+            
+        }
+
+
         &--images{
-            height: 8rem;
+            height: 10rem;
+            width: 20rem;
+            background-size: cover;
+            background-position: center;
         }
     }
 
