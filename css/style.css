@@ -133,10 +133,21 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 29em) {
+  .section__growing {
+    padding: 0 1rem;
+  }
+}
 .section__growing__content {
   flex: 0 0 50%;
   padding: 7rem 4rem;
   background-color: #101d2c;
+}
+@media screen and (max-width: 29em) {
+  .section__growing__content {
+    padding: 4rem 2rem;
+    flex: 0 0 100%;
+  }
 }
 .section__growing__picture {
   flex: 1;
@@ -355,6 +366,11 @@ body {
 .section__sponsorship {
   padding: 0rem 4rem 4rem;
 }
+@media screen and (max-width: 29em) {
+  .section__sponsorship {
+    padding: 0rem 1rem 4rem;
+  }
+}
 .section__sponsorship__bottom {
   padding: 3rem;
   background-color: #f9f7f6;
@@ -455,6 +471,11 @@ body {
 .section__video {
   padding: 5rem 12rem 1rem;
 }
+@media screen and (max-width: 37.5em) {
+  .section__video {
+    padding: 5rem 1rem 1rem;
+  }
+}
 .section__video__tab {
   margin-bottom: 0rem;
 }
@@ -471,6 +492,11 @@ body {
 @media screen and (max-width: 53.25em) {
   .section__faqs {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 53.25em) {
+  .section__faqs {
+    padding: 1rem;
   }
 }
 .section__faqs__left {
@@ -547,6 +573,11 @@ body {
   padding: 7rem 3rem;
   background-color: #c69963;
 }
+@media screen and (max-width: 29em) {
+  .section__membership__topbar {
+    padding: 5rem 1rem;
+  }
+}
 .section__membership__topbar__heading {
   font-size: 4.5rem;
   font-weight: 900;
@@ -554,12 +585,22 @@ body {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 29em) {
+  .section__membership__topbar__heading {
+    font-size: 3.5rem;
+  }
+}
 .section__membership__topbar__text {
   font-size: 2.5rem;
   color: #f9f7f6;
   line-height: 1.5;
   margin-bottom: 2rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 29em) {
+  .section__membership__topbar__text {
+    font-size: 1.8rem;
+  }
 }
 .section__membership__content {
   display: flex;
@@ -654,6 +695,11 @@ body {
   background-color: #101d2c;
   padding: 6rem 4rem;
 }
+@media screen and (max-width: 53.25em) {
+  .section__footer {
+    padding: 4rem 2rem;
+  }
+}
 .section__footer__top {
   display: flex;
   border-bottom: 1px solid #aaa;
@@ -676,6 +722,13 @@ body {
   height: 8rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 37.5em) {
+  .section__footer__top--logo {
+    width: 10rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+  }
+}
 .section__footer__top--text {
   font-size: 1.6rem;
   color: #f9f7f6;
@@ -695,6 +748,11 @@ body {
 }
 .section__footer__top--logos {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .section__footer__top--logos {
+    margin-bottom: 1rem;
+  }
 }
 .section__footer__top--middle {
   flex: 1;
@@ -716,6 +774,11 @@ body {
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .section__footer__top--header {
+    margin-bottom: 1rem;
+  }
+}
 .section__footer__top__right__container {
   flex: 1;
   text-align: right;
@@ -730,8 +793,19 @@ body {
   padding-bottom: 4rem;
   border-bottom: 1px solid #aaa;
 }
+@media screen and (max-width: 37.5em) {
+  .section__footer__top__right1 {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .section__footer__top__right2 {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .section__footer__top__right2 {
+    margin-bottom: 1rem;
+  }
 }
 .section__footer__top__header1 {
   font-size: 2.2rem;
@@ -819,6 +893,13 @@ body {
 @media screen and (max-width: 37.5em) {
   .section__brief {
     padding: 4rem 0rem;
+    margin: 1rem 5rem 0rem;
+  }
+}
+@media screen and (max-width: 29em) {
+  .section__brief {
+    padding: 2rem 0rem;
+    margin: 1rem 4rem 0rem;
   }
 }
 .section__brief__logo--image {
@@ -842,6 +923,11 @@ body {
     font-size: 2.2rem;
   }
 }
+@media screen and (max-width: 29em) {
+  .section__brief__text {
+    font-size: 1.8rem;
+  }
+}
 .section__brief__heading--link {
   font-size: 2.2rem;
   font-weight: 900;
@@ -851,6 +937,11 @@ body {
 @media screen and (max-width: 37.5em) {
   .section__brief__heading--link {
     font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 29em) {
+  .section__brief__heading--link {
+    font-size: 1.8rem;
   }
 }
 .section__brief__paragraph {
@@ -863,6 +954,11 @@ body {
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 29em) {
+  .section__brief__paragraph {
+    font-size: 1rem;
+  }
+}
 .section__brief__subheading {
   font-size: 1.4rem;
   color: #101d2c;
@@ -870,6 +966,11 @@ body {
 @media screen and (max-width: 37.5em) {
   .section__brief__subheading {
     font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 29em) {
+  .section__brief__subheading {
+    font-size: 1rem;
   }
 }
 .section__brief__mail {
@@ -886,6 +987,11 @@ body {
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 29em) {
+  .section__brief__mail {
+    font-size: 1.6rem;
+  }
+}
 .section__brief__mail--link {
   color: #6D5D4B;
 }
@@ -897,6 +1003,11 @@ body {
 @media screen and (max-width: 37.5em) {
   .section__brief__mail--text {
     font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 29em) {
+  .section__brief__mail--text {
+    font-size: 1rem;
   }
 }
 .section__brief__mail:hover {
@@ -918,6 +1029,12 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 29em) {
+  .section__brief__mail--button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}
 .section__brief__mail--button:hover {
   background-color: #B28451;
   outline: none;
@@ -935,6 +1052,19 @@ body {
   width: 30%;
   margin: 2rem 0;
   margin-right: 0.2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .section__brief__email {
+    width: 60%;
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem 0.8rem 1rem;
+  }
+}
+@media screen and (max-width: 29em) {
+  .section__brief__email {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+  }
 }
 .section__brief__email:focus {
   outline: none;

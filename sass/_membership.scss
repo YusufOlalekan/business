@@ -8,12 +8,20 @@
         padding: 7rem 3rem;
         background-color: $color-primary;
 
+        @media screen and (max-width: $bp-smallest) {
+            padding: 5rem 1rem;
+        }
+
         &__heading{
             font-size: 4.5rem;
             font-weight: 900;
             color: $color-grey-light-1;
             font-family: "Josefin Sans", sans-serif;
             margin-bottom: 2rem;
+
+            @media screen and (max-width: $bp-smallest) {
+                font-size: 3.5rem;
+            }
         }
         &__text{
             font-size: 2.5rem;
@@ -21,6 +29,10 @@
             line-height: 1.5;
             margin-bottom: 2rem;
             text-transform: uppercase;
+
+            @media screen and (max-width: $bp-smallest) {
+                font-size: 1.8rem;
+            }
         }
     }
     &__content{

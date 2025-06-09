@@ -2,6 +2,10 @@
     background-color: $color-secondary;
     padding: 6rem 4rem;
 
+    @media screen and (max-width: $bp-medium) {
+        padding: 4rem 2rem;
+    }
+
     &__top{
         display: flex;
         border-bottom: 1px solid $color-grey-light-2;
@@ -21,6 +25,12 @@
             width: 20rem;
             height: 8rem;
             margin-bottom: 3rem;
+
+            @media screen and (max-width: $bp-small) {
+                width: 10rem;
+                height: 4rem;
+                margin-bottom: 1rem;
+            }
         }
         &--text{
             font-size: 1.6rem;
@@ -38,6 +48,10 @@
         }
         &--logos{
             margin-bottom: 2rem;
+
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 1rem;
+            }
         }
         &--middle{
             flex: 1;
@@ -56,6 +70,9 @@
             @media screen and (max-width: $bp-medium) {
                 font-size: 1.8rem;
             }
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 1rem;
+            }
         }
         &__right__container{
             flex: 1;
@@ -69,10 +86,19 @@
             margin-bottom: 4rem;
             padding-bottom: 4rem;
             border-bottom: 1px solid $color-grey-light-2;
+
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
+            }
             
         }
         &__right2{
             margin-bottom: 2rem;
+
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 1rem;
+            }
         }
         &__header1{
             font-size: 2.2rem;

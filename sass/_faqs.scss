@@ -6,6 +6,9 @@
     @media screen and (max-width: $bp-medium) {
             flex-direction: column;
         }
+    @media screen and (max-width: $bp-medium) {
+          padding: 1rem;
+        }
 
     &__left{
         flex: 0 0 35%;
