@@ -39,6 +39,11 @@
         background-color: rgba($color-primary, 0.9); 
         box-shadow: 0 .4rem .6rem rgba($color-black, 0.1);
 
+        @media screen and (max-width: $bp-small) {
+            top: 1.8rem;
+            right: 2.5rem;
+        }
+
         z-index: 2000;
         transition: transform .3s;
         //transform: scale(20);
@@ -56,17 +61,18 @@
    }
    &__nav{
         position: absolute;
-        top: 25%;
-        right: 40%;
+        top: 45%;
+        right: 20%;
         transform: translate(-50%, -50%);
         list-style: none;
+        justify-items: center;
    }
    &__items:link,
    &__items:visited{
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
         display: inline-block;
         line-height: 1.7;
@@ -80,6 +86,7 @@
           transition: all 0.1s ease;
           border-bottom: 0.2rem solid $color-primary;
           padding: .1rem;
+            color: $color-primary;
           box-sizing: border-box;
     }
     &__checkbox:checked ~ &__background{
